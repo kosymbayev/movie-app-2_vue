@@ -1,0 +1,73 @@
+/* movies */
+.movies-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0 8px;
+}
+.movies-list-title {
+    grid-column: 1/-1;
+    margin-top: 16px;
+}
+
+/* movie item */
+.movie {
+    padding: 16px 8px;
+}
+
+.movie .movie-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.movie .product-image {
+    position: relative;
+    display: block;
+}
+
+.movie img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 8/11;
+    border-radius: 12px;
+}
+
+.movie .type {
+    position: absolute;
+    padding: 8px 16px;
+    bottom: 16px;
+    left: 0;
+    text-transform: capitalize;
+}
+
+.movie .detail {
+    padding: 8px;
+    flex: 1 1 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.movie .year {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.movie h3 {
+    color: #181818;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* load */
+.more-btn {
+    padding: 16px 8px;
+    grid-column: 1/-1;
+    background: #181818;
+    color: #f3f3f3;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
